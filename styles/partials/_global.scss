@@ -4,4 +4,27 @@ html {
 
 body {
     font-size: 1.6rem;
+    background: $bodyColor;
 }
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    // border: 2px solid tomato;
+    margin: 0 auto;
+}
+
+.outerWrapper {
+    max-width: 1320px;
+    width: 85%;
+    margin: 0 auto;
+    // border: 2px solid tomato;
+}
+
+img {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    // filter: opacity(50%);
+}
+

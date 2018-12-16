@@ -1,0 +1,40 @@
+.fixedNav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    position: fixed;
+    right: calc(15% / 2);
+    z-index: 10;
+    
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.mainNav {
+    // display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    padding: 150px 25px;
+    text-align: center;
+    width: 320px;
+}
+
+.closed {
+    right: -480px;
+}
+
+.opened {
+    // display: block;
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
