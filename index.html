@@ -5,8 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MATTY RIVERA</title>
+    <script defer src='https://use.fontawesome.com/releases/v5.0.8/js/all.js'></script>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="mainNav closed">
+            <div class="close">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="NavLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="socialLinks">
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- ---------------------------- -->
+
+        <div class="nameHeading">
+            <h1>Matty Rivera</h1>
+        </div>
+        <div class="title">
+            <h2>Front End Web Developer</h2>
+        </div>
+        <div class="scrollBottom">
+            <i class="fas fa-angle-down"></i>
+        </div>
+
+    </header>
+
+
+    <!-- JQUERY SCRIPTS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>  
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").on("click", function () {
+                $(".mainNav").removeClass("closed");
+                $(".mainNav").addClass("opened");
+            })
+
+            $(".close").on("click", function () {
+                $(".mainNav").removeClass("opened");
+                $(".mainNav").addClass("closed");
+            })
+        })
+    </script>
+
 </body>
 </html>
