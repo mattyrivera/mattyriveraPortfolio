@@ -3,7 +3,8 @@
     justify-content: flex-end;
     padding-top: 30px;
     position: fixed;
-    right: calc(15% / 2);
+    right: calc(10% / 2);
+    // right: calc(15% / 2);
     z-index: 10;
     
 }
@@ -11,6 +12,8 @@
 .hamburger {
     cursor: pointer;
     font-size: 2.5rem;
+    color: $darkFont;
+    
 }
 
 .mainNav {

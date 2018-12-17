@@ -164,7 +164,7 @@ img {
   font-weight: 700;
   line-height: 1;
   color: #4C5860;
-  font-size: 3rem;
+  font-size: 4rem;
   text-transform: lowercase; }
 
 .headingContainerEnd {
@@ -184,12 +184,13 @@ img {
   justify-content: flex-end;
   padding-top: 30px;
   position: fixed;
-  right: calc(15% / 2);
+  right: calc(10% / 2);
   z-index: 10; }
 
 .hamburger {
   cursor: pointer;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  color: #2B2B2B; }
 
 .mainNav {
   position: fixed;
@@ -229,12 +230,13 @@ header {
 
 .nameHeading h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 5.5rem;
+  font-size: 6rem;
   font-weight: 600;
   text-transform: lowercase;
   letter-spacing: 1px;
   margin: 0;
-  color: #4C5860; }
+  color: #4C5860;
+  color: #2B2B2B; }
 
 .aboutContainer {
   display: -webkit-box;
@@ -265,16 +267,15 @@ header {
 .heading--about::before {
   content: '';
   display: block;
-  width: 120px;
-  height: 25px;
+  width: 154px;
+  height: 29px;
   background: #D7EAF6;
-  top: -2px;
-  left: 25px;
+  top: -4px;
+  left: 34px;
   position: absolute;
   z-index: -1; }
 
 .projects {
-  background-color: #FFF1F1;
   -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
   clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
   padding: 10% 0 15% 0; }
@@ -286,11 +287,11 @@ header {
 .heading--projects::before {
   content: '';
   display: block;
-  width: 120px;
-  height: 25px;
+  width: 130px;
+  height: 29px;
   background: #D7EAF6;
-  top: -2px;
-  left: 25px;
+  top: -4px;
+  left: 34px;
   position: absolute;
   z-index: -1; }
 
