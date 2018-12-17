@@ -1,0 +1,16 @@
+.heading--contact {
+    position: relative;
+    z-index: 5;
+}
+
+.heading--contact::before {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 29px;
+    background: #D7EAF6;
+    top: -4px;
+    left: 30px;
+    position: absolute;
+    z-index: -1;
+}

@@ -276,6 +276,7 @@ header {
   z-index: -1; }
 
 .projects {
+  background-color: #FFF1F1;
   -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
   clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
   padding: 10% 0 15% 0; }
@@ -345,3 +346,76 @@ header {
 
 .projectDescriptionContainer {
   width: 50%; }
+
+.skills {
+  padding: 5% 0; }
+
+.heading--skills {
+  position: relative;
+  z-index: 5; }
+
+.heading--skills::before {
+  content: '';
+  display: block;
+  width: 81px;
+  height: 29px;
+  background: #D7EAF6;
+  top: -4px;
+  left: 28px;
+  position: absolute;
+  z-index: -1; }
+
+.iconListContainer {
+  background: #FFF1F1;
+  padding: 50px 20px; }
+
+.iconList:first-child {
+  margin-bottom: 50px; }
+
+.firebase {
+  max-width: 40px;
+  padding-top: 5px; }
+
+.iconList {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 6rem; }
+
+.iconList--item {
+  list-style: none;
+  color: #869da8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.iconTitle {
+  font-size: 1.6rem; }
+
+.heading--contact {
+  position: relative;
+  z-index: 5; }
+
+.heading--contact::before {
+  content: '';
+  display: block;
+  width: 130px;
+  height: 29px;
+  background: #D7EAF6;
+  top: -4px;
+  left: 30px;
+  position: absolute;
+  z-index: -1; }
