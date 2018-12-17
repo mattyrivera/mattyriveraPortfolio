@@ -136,8 +136,13 @@ html {
   font-size: 62.5%; }
 
 body {
+  background: #FCFCFC;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4C5860;
   font-size: 1.6rem;
-  background: #FCFCFC; }
+  overflow-x: hidden; }
 
 .wrapper {
   max-width: 1280px;
@@ -147,12 +152,28 @@ body {
 .outerWrapper {
   max-width: 1320px;
   width: 85%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 2px solid tomato; }
 
 img {
-  max-width: 500px;
   width: 100%;
   display: block; }
+
+.heading {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: #4C5860;
+  font-size: 3rem;
+  text-transform: lowercase; }
+
+.headingContainerEnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
 .fixedNav {
   display: -webkit-box;
@@ -167,7 +188,8 @@ img {
   z-index: 10; }
 
 .hamburger {
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 2.5rem; }
 
 .mainNav {
   position: fixed;
@@ -191,24 +213,134 @@ img {
   cursor: pointer; }
 
 header {
-  height: 97vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D7EAF6), to(#FFF1F1));
-  background: -webkit-linear-gradient(#D7EAF6, #FFF1F1);
-  background: -o-linear-gradient(#D7EAF6, #FFF1F1);
-  background: linear-gradient(#D7EAF6, #FFF1F1);
+  height: 98vh;
+  background: #D7EAF6;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
 
-.nameHeading h1 {
-  margin: 0; }
-
-.projects {
-  background-color: #FFF1F1; }
-
-.frame {
+.headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%; }
+
+.nameHeading h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #4C5860; }
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.portrait img {
+  max-width: 600px;
+  border-radius: 9px;
+  -webkit-filter: opacity(60%);
+  filter: opacity(60%); }
+
+.portrait {
+  width: 50%;
+  margin-right: 30px; }
+
+.aboutDescription {
+  width: 50%; }
+
+.heading--about {
+  position: relative;
+  z-index: 5; }
+
+.heading--about::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 25px;
+  background: #D7EAF6;
+  top: -2px;
+  left: 25px;
+  position: absolute;
+  z-index: -1; }
+
+.projects {
+  background-color: #FFF1F1;
+  -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
+  clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
+  padding: 10% 0 15% 0; }
+
+.heading--projects {
+  position: relative;
+  z-index: 5; }
+
+.heading--projects::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 25px;
+  background: #D7EAF6;
+  top: -2px;
+  left: 25px;
+  position: absolute;
+  z-index: -1; }
+
+.project-img {
+  max-width: 500px; }
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 3% 0; }
+  .project--rightAlign {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+    .project--rightAlign .projectImgContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .project--rightAlign .project-img {
+      -ms-flex-item-align: center;
+      align-self: center; }
+
+.projectImgContainer {
+  width: 50%;
+  position: relative; }
+
+.saltLamp-img {
+  max-width: 28%;
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+  z-index: -10; }
+
+.saltLampRight-img {
+  position: absolute;
+  bottom: -8%;
+  right: -18%; }
+
+.saltLampLeft-img {
+  position: absolute;
+  bottom: -8%;
+  left: -18%; }
+
+.projectDescriptionContainer {
+  width: 50%; }

@@ -1,6 +1,42 @@
+// VARIABLES
+$primaryColor: #4C5860;
 $primaryAccent: #FFF1F1;
 $secondaryAccent: #D7EAF6;
 $bodyColor: #FCFCFC;
+$accentFont: 'Josefin Sans', sans-serif;
+$primaryFont: 'Lato', sans-serif;
+
+
+// MIXINS
+
+@mixin mainHeading($size) {
+    font-family: $accentFont;
+    font-size: $size;
+    font-weight: 600;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    margin: 0;
+    color: $primaryColor;
+}
+
+@mixin defaultFont ($size) {
+    font-family: $primaryFont;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $primaryColor;
+    font-size: $size;
+}
+
+@mixin sectionHeading($size) {
+    font-family: $primaryFont;
+    font-weight: 700;
+    line-height: 1;
+    color: $primaryColor;
+    font-size: $size;
+    text-transform: lowercase;
+}
+
+
 
 
 

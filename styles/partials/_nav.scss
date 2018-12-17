@@ -10,10 +10,10 @@
 
 .hamburger {
     cursor: pointer;
+    font-size: 2.5rem;
 }
 
 .mainNav {
-    // display: none;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -28,7 +28,6 @@
 }
 
 .opened {
-    // display: block;
     right: 0;
 }
 

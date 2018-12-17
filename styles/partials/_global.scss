@@ -3,8 +3,10 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
     background: $bodyColor;
+    @include defaultFont(1.6rem);
+    overflow-x: hidden;
+
 }
 
 .wrapper {
@@ -18,13 +20,21 @@ body {
     max-width: 1320px;
     width: 85%;
     margin: 0 auto;
-    // border: 2px solid tomato;
+    border: 2px solid tomato;
 }
 
 img {
-    max-width: 500px;
+    // max-width: 500px;
     width: 100%;
     display: block;
-    // filter: opacity(50%);
+}
+
+.heading {
+    @include sectionHeading(3rem);
+}
+
+.headingContainerEnd {
+    display: flex;
+    justify-content: flex-end;
 }
 

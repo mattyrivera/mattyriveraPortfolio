@@ -1,5 +1,39 @@
-.about {
-    // background: pink;
+.aboutContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.portrait img {
+    max-width: 600px;
+    border-radius: 9px;
+    filter: opacity(60%);
+}
+
+.portrait {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.aboutDescription {
+    width: 50%;
+}
+
+.heading--about {
+    position: relative;
+    z-index: 5;
+}
+
+.heading--about::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 25px;
+    background: $secondaryAccent;
+    top: -2px;
+    left: 25px;
+    position: absolute;
+    z-index: -1;
 }
 
 

@@ -1,4 +1,77 @@
 .projects {
-    background-color: $primaryAccent;
+    background-color: $primaryAccent;  
+    // background-color: $primaryColor; 
+    -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
+    clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
+    padding: 10% 0 15% 0;
+}
+
+.heading--projects {
+    position: relative;
+    z-index: 5;
+}
+
+.heading--projects::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 25px;
+    background: $secondaryAccent;
+    top: -2px;
+    left: 25px;
+    position: absolute;
+    z-index: -1;
+}
+
+.project-img {
+    max-width: 500px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3% 0;
+    &--rightAlign {
+        flex-direction: row-reverse;
+        .projectImgContainer{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .project-img {
+            align-self: center;
+        }
+    }
+}
+
+.projectImgContainer {
+    width: 50%;
+    position: relative;
+}
+
+.saltLamp-img {
+    max-width: 28%;
+    filter: opacity(50%);
+    z-index: -10;
+}
+
+.saltLampRight-img {
+    position: absolute;
+    // bottom: -45px;
+    // right: -80px;
+    bottom:-8%;
+    right:-18%;
+}
+
+.saltLampLeft-img {
+    position: absolute;
+    // bottom: -45px;
+    // left: -85px;
+    bottom:-8%;
+    left:-18%;
+}
+
+.projectDescriptionContainer {
+    width: 50%;
 }
 

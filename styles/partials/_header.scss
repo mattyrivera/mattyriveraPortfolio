@@ -1,11 +1,17 @@
 header {
-    height: 97vh;
-    background: linear-gradient($secondaryAccent, $primaryAccent,);
+    height: 98vh;
+    background: $secondaryAccent;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
-.nameHeading h1{
-    margin: 0;
+.headerContainer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nameHeading h1 {
+    @include mainHeading(5.5rem);
 }
 
