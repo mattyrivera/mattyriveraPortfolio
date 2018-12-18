@@ -5,7 +5,7 @@ $primaryAccent: #FFF1F1;
 // $secondaryAccent: #D7EAF6;
 $secondaryAccent: #d7f2f6;
 $bodyColor: #FCFCFC;
-$bodyColor-rgba: rgba(252,252,252,0.9);
+$bodyColor-rgba: rgba(252,252,252,1);
 $darkFont: #2B2B2B;
 //test color:
 $devicon: #869da8;
@@ -47,6 +47,15 @@ $primaryFont: 'Lato', sans-serif;
     font-weight: 700;
     font-size: $size;
     color:$color;
+}
+
+@mixin navFont {
+    font-family: $accentFont;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2;
+    color: $primaryColor;
     
 }
 

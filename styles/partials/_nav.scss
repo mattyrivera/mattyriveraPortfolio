@@ -23,7 +23,8 @@
     z-index: 10;
     padding: 150px 25px;
     text-align: center;
-    background: $bodyColor-rgba;
+    // background: $bodyColor-rgba;
+    background: linear-gradient(rgba(252,252,252,1), rgba(252,252,252,1), rgba(252,252,252,0.5));
     width: 320px;
 }
 
@@ -34,11 +35,31 @@
 .opened {
     right: 0;
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 45px;
+}
+
+.navLinks, .socialLinks li {
+    list-style: none;
+    a {
+        text-decoration: none;
+        @include navFont;
+    }
+}
+
+.socialLinks {
+    display: flex;
+    li{
+        margin: 10px;
+    }
 }
 
 .close {
     position: absolute;
     top: 25px;
-    right: 25px;
+    right: 50px;
+    font-size: 2.5rem;
     cursor: pointer;
 }

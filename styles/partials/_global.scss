@@ -5,6 +5,7 @@ html {
 
 body {
     background: $bodyColor;
+    // background: $primaryColor;
     @include defaultFont(1.6rem);
     overflow-x: hidden;
 

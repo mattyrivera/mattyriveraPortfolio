@@ -1,6 +1,7 @@
 .projects {
     // background: linear-gradient($primaryAccent, $secondaryAccent);  
     background-color: $primaryAccent; 
+    // background-color: $bodyColor;
     -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
     clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
     padding: 10% 0 15% 0;

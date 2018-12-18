@@ -200,7 +200,10 @@ img {
   z-index: 10;
   padding: 150px 25px;
   text-align: center;
-  background: rgba(252, 252, 252, 0.9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), color-stop(#fcfcfc), to(rgba(252, 252, 252, 0.5)));
+  background: -webkit-linear-gradient(#fcfcfc, #fcfcfc, rgba(252, 252, 252, 0.5));
+  background: -o-linear-gradient(#fcfcfc, #fcfcfc, rgba(252, 252, 252, 0.5));
+  background: linear-gradient(#fcfcfc, #fcfcfc, rgba(252, 252, 252, 0.5));
   width: 320px; }
 
 .closed {
@@ -210,12 +213,42 @@ img {
   right: 0;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 45px; }
+
+.navLinks, .socialLinks li {
+  list-style: none; }
+  .navLinks a, .socialLinks li a {
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2;
+    color: #4C5860; }
+
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .socialLinks li {
+    margin: 10px; }
 
 .close {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 50px;
+  font-size: 2.5rem;
   cursor: pointer; }
 
 header {
@@ -233,15 +266,117 @@ header {
   align-items: center;
   height: 100%; }
 
-.nameHeading h1 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 6rem;
-  font-weight: 600;
-  text-transform: lowercase;
-  letter-spacing: 1px;
+.mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.title h2 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
   margin: 0;
-  color: #4C5860;
-  color: #2B2B2B; }
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 2rem; }
+
+.scrollDown--btn {
+  color: #869da8; }
+
+.fill {
+  max-width: 242px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-animation: fill 6s linear;
+  animation: fill 6s linear; }
+
+@-webkit-keyframes fill {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0.3; }
+  90% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fill {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: 0.3; }
+  90% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+path {
+  stroke: #4e5860;
+  fill: #4e5860;
+  stroke-dasharray: 1550;
+  opacity: 1;
+  -webkit-animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1);
+  animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1); }
+
+@-webkit-keyframes stroke {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 1800;
+    fill: rgba(78, 88, 96, 0); }
+  20% {
+    opacity: 0.3;
+    fill: rgba(78, 88, 96, 0); }
+  50% {
+    opacity: 0.7;
+    fill: rgba(78, 88, 96, 0); }
+  60% {
+    opacity: 0.5;
+    fill: rgba(78, 88, 96, 0); }
+  75% {
+    opacity: 0.7;
+    fill: rgba(78, 88, 96, 0); }
+  85% {
+    opacity: 0.9;
+    fill: rgba(78, 88, 96, 0); }
+  95% {
+    opacity: 1;
+    fill: rgba(78, 88, 96, 0.8); }
+  100% {
+    fill: #4e5860; } }
+
+@keyframes stroke {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 1800;
+    fill: rgba(78, 88, 96, 0); }
+  20% {
+    opacity: 0.3;
+    fill: rgba(78, 88, 96, 0); }
+  50% {
+    opacity: 0.7;
+    fill: rgba(78, 88, 96, 0); }
+  60% {
+    opacity: 0.5;
+    fill: rgba(78, 88, 96, 0); }
+  75% {
+    opacity: 0.7;
+    fill: rgba(78, 88, 96, 0); }
+  85% {
+    opacity: 0.9;
+    fill: rgba(78, 88, 96, 0); }
+  95% {
+    opacity: 1;
+    fill: rgba(78, 88, 96, 0.8); }
+  100% {
+    fill: #4e5860; } }
 
 .aboutContainer {
   display: -webkit-box;

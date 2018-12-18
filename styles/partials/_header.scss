@@ -13,9 +13,127 @@ header {
     height: 100%;
 }
 
+.mainContent {
+    display: flex;
+    flex-direction: column;
+}
+
 .nameHeading h1 {
-    @include mainHeading(6rem);
-    color: $darkFont;
-    // color: $bodyColor;
+    // @include mainHeading(6rem);
+    // color: $darkFont;
+    // line-height: 1;
+}
+
+.title h2 {
+    font-family: $primaryFont;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 2rem;
+    // border: 1px solid tomato;
+}
+
+
+.scrollDown--btn {
+    color: $devicon;
+    // border: 1px solid tomato;
+}
+
+
+.nameHeading svg {
+
+}
+
+// --------------------------
+
+.fill {
+	max-width: 242px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	animation: fill 6s linear;
+}
+
+@keyframes fill {
+	0% {
+		opacity: 0;
+	}
+
+	80% {
+		opacity: 0.3;
+	}
+
+	90% {
+		opacity: 0.8;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+// ANIMATED LOGO FILL ENDS
+// ANIMATED LOGO STROKE STARTS
+
+.nameHeading svg {
+	// position: absolute;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%, -50%);
+}
+
+
+path {
+	stroke: rgba(78,88,96,1);
+	fill: rgba(78,88,96,1);
+	stroke-dasharray: 1550;
+	opacity: 1;
+    animation: stroke 3s cubic-bezier(0,0.23,1,0.1);
+}
+
+@keyframes stroke {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 1800;
+        fill: rgba(78,88,96,0);
+    }
+
+    20% {
+        opacity: 0.3;
+        fill: rgba(78,88,96,0);
+    }
+
+    50% {
+        opacity: 0.7;
+        fill: rgba(78,88,96,0);
+    }
+
+    60% {
+        opacity: 0.5;
+        fill: rgba(78,88,96,0);
+    }
+
+    75% {
+        opacity: 0.7;
+        fill: rgba(78,88,96,0)
+    }
+
+    85% {
+        opacity: 0.9;
+        fill: rgba(78,88,96,0);
+    }
+
+    95% {
+        opacity: 1;
+        fill: rgba(78,88,96,0.8);
+    }
+
+    100% {
+        fill: rgba(78,88,96,1);
+    }
 }
 
