@@ -133,7 +133,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   background: #FCFCFC;
@@ -199,13 +200,17 @@ img {
   z-index: 10;
   padding: 150px 25px;
   text-align: center;
+  background: rgba(252, 252, 252, 0.9);
   width: 320px; }
 
 .closed {
   right: -480px; }
 
 .opened {
-  right: 0; }
+  right: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 .close {
   position: absolute;
@@ -215,7 +220,7 @@ img {
 
 header {
   height: 98vh;
-  background: #D7EAF6;
+  background: #d7f2f6;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
 
@@ -269,7 +274,7 @@ header {
   display: block;
   width: 154px;
   height: 29px;
-  background: #D7EAF6;
+  background: #FFF1F1;
   top: -4px;
   left: 34px;
   position: absolute;
@@ -290,7 +295,7 @@ header {
   display: block;
   width: 130px;
   height: 29px;
-  background: #D7EAF6;
+  background: #FCFCFC;
   top: -4px;
   left: 34px;
   position: absolute;
@@ -330,8 +335,8 @@ header {
 
 .saltLamp-img {
   max-width: 28%;
-  -webkit-filter: opacity(50%);
-  filter: opacity(50%);
+  -webkit-filter: opacity(70%);
+  filter: opacity(70%);
   z-index: -10; }
 
 .saltLampRight-img {
@@ -359,7 +364,7 @@ header {
   display: block;
   width: 81px;
   height: 29px;
-  background: #D7EAF6;
+  background: #d7f2f6;
   top: -4px;
   left: 28px;
   position: absolute;
@@ -405,6 +410,40 @@ header {
 .iconTitle {
   font-size: 1.6rem; }
 
+.contact {
+  -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+  background: #d7f2f6;
+  padding: 10% 0 5% 0; }
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 20px; }
+
+.emailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .heading--contact {
   position: relative;
   z-index: 5; }
@@ -414,8 +453,54 @@ header {
   display: block;
   width: 130px;
   height: 29px;
-  background: #D7EAF6;
+  background: white;
   top: -4px;
   left: 30px;
   position: absolute;
   z-index: -1; }
+
+.contactMeEmail {
+  margin: 0; }
+
+.emailAddressLink {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #869da8;
+  text-decoration: none;
+  background: #FFF1F1;
+  padding: 3px 15px;
+  margin: 20px 0; }
+
+.socialLinksContact {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .socialLinksContact li {
+    list-style: none;
+    margin-right: 25%; }
+    .socialLinksContact li:last-child {
+      margin-right: 0; }
+  .socialLinksContact--item {
+    color: #869da8;
+    font-size: 2.5rem; }
+
+footer {
+  background: #2B2B2B; }
+
+.copyrightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.copyrightContent {
+  color: rgba(215, 234, 246, 0.6);
+  font-weight: 400; }

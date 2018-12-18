@@ -12,7 +12,7 @@
     display: block;
     width: 81px;
     height: 29px;
-    background: #D7EAF6;
+    background: $secondaryAccent;
     top: -4px;
     left: 28px;
     position: absolute;
@@ -21,6 +21,7 @@
 
 .iconListContainer {
     background: $primaryAccent;
+    
     padding: 50px 20px;
 }
 

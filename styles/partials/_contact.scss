@@ -1,3 +1,25 @@
+.contact {
+    -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+    background: $secondaryAccent;
+    padding: 10% 0 5% 0;;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background: $primaryAccent;
+    padding: 50px 20px;
+}
+
+.emailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .heading--contact {
     position: relative;
     z-index: 5;
@@ -8,9 +30,43 @@
     display: block;
     width: 130px;
     height: 29px;
-    background: #D7EAF6;
+    // background: #D7EAF6;
+    background: white;
     top: -4px;
     left: 30px;
     position: absolute;
     z-index: -1;
+}
+
+.contactMeEmail {
+    margin: 0;
+}
+
+.emailAddressLink {
+    @include clickFont(2rem, $devicon);
+    text-decoration: none;
+    background: $primaryAccent; 
+    padding: 3px 15px;
+    //add something cool 
+    margin: 20px 0;
+
+}
+
+.socialLinksContact {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li {
+        list-style: none;
+        margin-right: 25%;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &--item {
+        color: $devicon;
+        font-size: 2.5rem;
+        
+    }
 }

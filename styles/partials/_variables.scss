@@ -1,8 +1,11 @@
 // VARIABLES
 $primaryColor: #4C5860;
 $primaryAccent: #FFF1F1;
-$secondaryAccent: #D7EAF6;
+// $primaryAccent: #f6dbd7;
+// $secondaryAccent: #D7EAF6;
+$secondaryAccent: #d7f2f6;
 $bodyColor: #FCFCFC;
+$bodyColor-rgba: rgba(252,252,252,0.9);
 $darkFont: #2B2B2B;
 //test color:
 $devicon: #869da8;
@@ -39,7 +42,13 @@ $primaryFont: 'Lato', sans-serif;
     text-transform: lowercase;
 }
 
-
+@mixin clickFont($size, $color) {
+    font-family: $primaryFont;
+    font-weight: 700;
+    font-size: $size;
+    color:$color;
+    
+}
 
 
 

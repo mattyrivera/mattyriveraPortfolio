@@ -1,6 +1,6 @@
 .projects {
-    background-color: $primaryAccent;  
-    // background-color: $primaryColor; 
+    // background: linear-gradient($primaryAccent, $secondaryAccent);  
+    background-color: $primaryAccent; 
     -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
     clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
     padding: 10% 0 15% 0;
@@ -12,20 +12,12 @@
 }
 
 .heading--projects::before {
-    // content: '';
-    // display: block;
-    // width: 120px;
-    // height: 25px;
-    // background: $secondaryAccent;
-    // top: -2px;
-    // left: 25px;
-    // position: absolute;
-    // z-index: -1;
     content: '';
     display: block;
     width: 130px;
     height: 29px;
-    background: #D7EAF6;
+    // background: #D7EAF6;
+    background: $bodyColor;
     top: -4px;
     left: 34px;
     position: absolute;
@@ -60,7 +52,7 @@
 
 .saltLamp-img {
     max-width: 28%;
-    filter: opacity(50%);
+    filter: opacity(70%);
     z-index: -10;
 }
 
@@ -83,4 +75,5 @@
 .projectDescriptionContainer {
     width: 50%;
 }
+
 

@@ -1,6 +1,7 @@
 header {
     height: 98vh;
     background: $secondaryAccent;
+    // background: linear-gradient($primaryAccent, $secondaryAccent); 
     // background: $primaryColor;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);

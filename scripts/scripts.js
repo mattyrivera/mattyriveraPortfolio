@@ -10,4 +10,11 @@ $(document).ready(function () {
         $(".mainNav").removeClass("opened");
         $(".mainNav").addClass("closed");
     })
+
+    $(".navLinks li").on('click', function(){
+        $(".mainNav").removeClass("opened");
+        $(".mainNav").addClass("closed");
+    })
+
 })
+

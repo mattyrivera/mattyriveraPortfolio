@@ -20,12 +20,12 @@
             <div class="close">
                 <i class="fas fa-times"></i>
             </div>
-            <ul class="NavLinks">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="socialLinks">
                 <li><a href="#"><i class="fab fa-github"></i></a></li>
@@ -36,7 +36,7 @@
     </nav>
     <!-- header -->
     <header>
-        <div class="headerContainer">
+        <div class="headerContainer" id="home">
             <div class="wrapper">
                 <div class="nameHeading">
                     <h1>Matty Rivera</h1>
@@ -52,7 +52,7 @@
     </header>
     <!-- ABOUT -->
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <div class="headingContainerEnd">
                     <h2 class="heading heading--about">about me</h2>
@@ -69,7 +69,7 @@
             </div>
         </section>
         <!-- PROJECT -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="wrapper">
                 <div class="headingContainer">
                     <h2 class="heading heading--projects">projects</h2>
@@ -120,7 +120,8 @@
                 </div>
             </div>
         </section>
-        <section class="skills">
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
             <div class="wrapper">
                 <div class="headingContainerEnd">
                     <h2 class="heading heading--skills">skills</h2>
@@ -143,14 +144,36 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="headingContainer">
                     <h2 class="heading heading--contact">contact</h2>
                 </div>
+                <div class="contactContainer">
+                    <div class="emailContainer">
+                        <p class="contactMeEmail">Get in touch with me!</p>
+                        <a href="mailto:hello@mattyrivera.com" class="emailAddressLink">hello@mattyrivera.com</a>
+                    </div>
+                    <div class="socialLinksContainer">
+                        <ul class="socialLinksContact">
+                            <li><a href="https://twitter.com/mattyrivera_" target="_blank" class="socialLinksContact--item"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="socialLinksContact--item"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="socialLinksContact--item"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    
+    <footer>
+        <div class="wrapper">
+            <div class="copyrightContainer">
+                <p class="copyrightContent">design & code | <span>&#169</span> matty rivera | 2018</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- JQUERY SCRIPTS -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>  
