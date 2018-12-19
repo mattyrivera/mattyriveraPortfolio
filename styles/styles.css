@@ -161,11 +161,11 @@ img {
   display: block; }
 
 .heading {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
   line-height: 1;
-  color: #4C5860;
-  font-size: 4rem;
+  color: #2B2B2B;
+  font-size: 4.5rem;
   text-transform: lowercase; }
 
 .headingContainerEnd {
@@ -253,7 +253,7 @@ img {
 
 header {
   height: 98vh;
-  background: #d7f2f6;
+  background: #ffd5d5;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
 
@@ -266,59 +266,25 @@ header {
   align-items: center;
   height: 100%; }
 
-.mainContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
-
 .title h2 {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 1px;
-  font-weight: 300;
-  font-size: 2rem; }
+  font-weight: 400;
+  font-size: 2rem;
+  padding-left: 3px; }
 
-.scrollDown--btn {
-  color: #869da8; }
-
-.fill {
+.nameHeading .fill {
   max-width: 242px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   opacity: 1;
-  -webkit-animation: fill 6s linear;
-  animation: fill 6s linear; }
+  -webkit-animation: fill 4s linear;
+  animation: fill 4s linear; }
 
-@-webkit-keyframes fill {
-  0% {
-    opacity: 0; }
-  80% {
-    opacity: 0.3; }
-  90% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fill {
-  0% {
-    opacity: 0; }
-  80% {
-    opacity: 0.3; }
-  90% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1; } }
-
-path {
+.nameHeading path {
   stroke: #4e5860;
   fill: #4e5860;
   stroke-dasharray: 1550;
@@ -348,7 +314,7 @@ path {
     fill: rgba(78, 88, 96, 0); }
   95% {
     opacity: 1;
-    fill: rgba(78, 88, 96, 0.8); }
+    fill: rgba(78, 88, 96, 0); }
   100% {
     fill: #4e5860; } }
 
@@ -374,9 +340,12 @@ path {
     fill: rgba(78, 88, 96, 0); }
   95% {
     opacity: 1;
-    fill: rgba(78, 88, 96, 0.8); }
+    fill: rgba(78, 88, 96, 0); }
   100% {
     fill: #4e5860; } }
+
+.about {
+  padding: 2% 0; }
 
 .aboutContainer {
   display: -webkit-box;
@@ -387,15 +356,16 @@ path {
   -ms-flex-align: center;
   align-items: center; }
 
-.portrait img {
+.portrait {
   max-width: 600px;
   border-radius: 9px;
-  -webkit-filter: opacity(60%);
-  filter: opacity(60%); }
-
-.portrait {
   width: 50%;
   margin-right: 30px; }
+  .portrait img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    max-width: 600px;
+    border-radius: 9px; }
 
 .aboutDescription {
   width: 50%; }
@@ -407,19 +377,22 @@ path {
 .heading--about::before {
   content: '';
   display: block;
-  width: 154px;
+  width: 189px;
   height: 29px;
-  background: #FFF1F1;
-  top: -4px;
-  left: 34px;
+  background: #d7f2f6;
+  top: -5px;
+  left: 41px;
   position: absolute;
   z-index: -1; }
 
 .projects {
-  background-color: #FFF1F1;
+  background-color: #d7f2f6;
   -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
   clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
-  padding: 10% 0 15% 0; }
+  padding: 10% 0 15% 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .heading--projects {
   position: relative;
@@ -428,11 +401,11 @@ path {
 .heading--projects::before {
   content: '';
   display: block;
-  width: 130px;
+  width: 150px;
   height: 29px;
   background: #FCFCFC;
-  top: -4px;
-  left: 34px;
+  top: -5px;
+  left: 40px;
   position: absolute;
   z-index: -1; }
 
@@ -447,7 +420,13 @@ path {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 3% 0; }
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 9px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 252, 252, 0)), to(rgba(252, 252, 252, 0.5)));
+  background: -webkit-linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0.5));
+  background: -o-linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0.5));
+  background: linear-gradient(rgba(252, 252, 252, 0), rgba(252, 252, 252, 0.5)); }
   .project--rightAlign {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -470,9 +449,9 @@ path {
 
 .saltLamp-img {
   max-width: 28%;
-  -webkit-filter: opacity(70%);
-  filter: opacity(70%);
-  z-index: -10; }
+  -webkit-filter: opacity(100%);
+  filter: opacity(100%);
+  z-index: -1; }
 
 .saltLampRight-img {
   position: absolute;
@@ -484,11 +463,24 @@ path {
   bottom: -8%;
   left: -18%; }
 
-.projectDescriptionContainer {
+.projectInfo {
   width: 50%; }
 
+.projectTools--list {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.projectTools--items {
+  list-style: none; }
+
+.projectLink--btn {
+  text-decoration: none; }
+
 .skills {
-  padding: 5% 0; }
+  padding: 5% 0 10% 0; }
 
 .heading--skills {
   position: relative;
@@ -497,17 +489,13 @@ path {
 .heading--skills::before {
   content: '';
   display: block;
-  width: 81px;
+  width: 99px;
   height: 29px;
-  background: #d7f2f6;
-  top: -4px;
-  left: 28px;
+  background: #ffd5d5;
+  top: -5px;
+  left: 30px;
   position: absolute;
   z-index: -1; }
-
-.iconListContainer {
-  background: #FFF1F1;
-  padding: 50px 20px; }
 
 .iconList:first-child {
   margin-bottom: 50px; }
@@ -530,7 +518,7 @@ path {
 
 .iconList--item {
   list-style: none;
-  color: #869da8;
+  color: #2B2B2B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,15 +528,17 @@ path {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 25px 50px; }
 
 .iconTitle {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin: 5px 0; }
 
 .contact {
   -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
   clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
-  background: #d7f2f6;
+  background: #ffd5d5;
   padding: 10% 0 5% 0; }
 
 .contactContainer {
@@ -586,11 +576,11 @@ path {
 .heading--contact::before {
   content: '';
   display: block;
-  width: 130px;
+  width: 150px;
   height: 29px;
   background: white;
-  top: -4px;
-  left: 30px;
+  top: -5px;
+  left: 34px;
   position: absolute;
   z-index: -1; }
 
@@ -603,7 +593,7 @@ path {
   font-size: 2rem;
   color: #869da8;
   text-decoration: none;
-  background: #FFF1F1;
+  background: #ffd5d5;
   padding: 3px 15px;
   margin: 20px 0; }
 

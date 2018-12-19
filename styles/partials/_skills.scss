@@ -1,5 +1,5 @@
 .skills {
-    padding: 5% 0;
+    padding: 5% 0 10% 0;
 }
 
 .heading--skills {
@@ -10,19 +10,18 @@
 .heading--skills::before {
     content: '';
     display: block;
-    width: 81px;
+    width: 99px;
     height: 29px;
-    background: $secondaryAccent;
-    top: -4px;
-    left: 28px;
+    background: $primaryAccent;
+    top: -5px;
+    left: 30px;
     position: absolute;
     z-index: -1;
 }
 
 .iconListContainer {
-    background: $primaryAccent;
-    
-    padding: 50px 20px;
+    // background: $primaryAccent;
+    // padding: 0 20px 0px 20px;
 }
 
 .iconList:first-child {
@@ -46,14 +45,18 @@
 
 .iconList--item {
     list-style: none;
-    color: #869da8;
+    // color: #869da8;
+    color: $darkFont;
     display: flex;
     flex-direction: column;
     align-items: center;
+    // background: $secondaryAccent;
+    padding: 25px 50px;
 }
 
 .iconTitle {
     font-size: 1.6rem;
+    margin: 5px 0;
 }
 
 

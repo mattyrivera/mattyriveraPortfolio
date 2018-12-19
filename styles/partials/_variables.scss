@@ -1,6 +1,7 @@
 // VARIABLES
 $primaryColor: #4C5860;
-$primaryAccent: #FFF1F1;
+// $primaryAccent: #FFF1F1;
+$primaryAccent: rgb(255, 213, 213);
 // $primaryAccent: #f6dbd7;
 // $secondaryAccent: #D7EAF6;
 $secondaryAccent: #d7f2f6;
@@ -34,10 +35,10 @@ $primaryFont: 'Lato', sans-serif;
 }
 
 @mixin sectionHeading($size) {
-    font-family: $primaryFont;
-    font-weight: 700;
+    font-family: $accentFont;
+    font-weight: 600;
     line-height: 1;
-    color: $primaryColor;
+    color: $darkFont;
     font-size: $size;
     text-transform: lowercase;
 }

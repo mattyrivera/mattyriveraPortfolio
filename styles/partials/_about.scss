@@ -1,18 +1,25 @@
+.about {
+    padding: 2% 0;
+}
 .aboutContainer {
     display: flex;
     width: 100%;
     align-items: center;
 }
 
-.portrait img {
-    max-width: 600px;
-    border-radius: 9px;
-    filter: opacity(60%);
-}
+
 
 .portrait {
+    max-width: 600px;
+    border-radius: 9px;
     width: 50%;
     margin-right: 30px;
+    img {
+        filter: grayscale(100%);
+        max-width: 600px;
+        border-radius: 9px;
+        // filter: opacity(100%);
+    }
 }
 
 .aboutDescription {
@@ -27,11 +34,11 @@
 .heading--about::before {
     content: '';
     display: block;
-    width: 154px;
+    width: 189px;
     height: 29px;
-    background: $primaryAccent;
-    top: -4px;
-    left: 34px;
+    background: $secondaryAccent;
+    top: -5px;
+    left: 41px;
     position: absolute;
     z-index: -1;
 }

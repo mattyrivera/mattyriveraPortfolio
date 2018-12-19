@@ -1,10 +1,11 @@
 .projects {
     // background: linear-gradient($primaryAccent, $secondaryAccent);  
-    background-color: $primaryAccent; 
-    // background-color: $bodyColor;
+    background-color: $secondaryAccent; 
+    // background-color: $primaryColor;
     -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
     clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 96%);
     padding: 10% 0 15% 0;
+    transition: 1s;
 }
 
 .heading--projects {
@@ -15,12 +16,12 @@
 .heading--projects::before {
     content: '';
     display: block;
-    width: 130px;
+    width: 150px;
     height: 29px;
     // background: #D7EAF6;
     background: $bodyColor;
-    top: -4px;
-    left: 34px;
+    top: -5px;
+    left: 40px;
     position: absolute;
     z-index: -1;
 }
@@ -33,7 +34,12 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 3% 0;
+    // padding: 3% 0;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 9px;
+    background: linear-gradient(rgba(252,252,252, 0), rgba(252,252,252,0.5));
+    // border: 5px solid $bodyColor;
     &--rightAlign {
         flex-direction: row-reverse;
         .projectImgContainer{
@@ -53,8 +59,8 @@
 
 .saltLamp-img {
     max-width: 28%;
-    filter: opacity(70%);
-    z-index: -10;
+    filter: opacity(100%);
+    z-index: -1;
 }
 
 .saltLampRight-img {
@@ -73,8 +79,22 @@
     left:-18%;
 }
 
-.projectDescriptionContainer {
+.projectInfo {
     width: 50%;
 }
 
 
+.projectTools--list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.projectTools--items {
+        list-style: none;
+
+    }
+
+.projectLink--btn {
+    text-decoration: none;
+}

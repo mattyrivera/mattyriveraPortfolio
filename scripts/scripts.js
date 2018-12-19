@@ -16,5 +16,8 @@ $(document).ready(function () {
         $(".mainNav").addClass("closed");
     })
 
+
 })
+
+
 
